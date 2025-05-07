@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bormon_off | official</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="min-h-screen grid-pattern">
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix" class="matrix-rain"></canvas>
+    
+    <!-- Circuit lines decoration -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="circuit-line top-[10%]"></div>
+        <div class="circuit-line top-[20%]"></div>
+        <div class="circuit-line top-[30%]"></div>
+        <div class="circuit-line top-[40%]"></div>
+        <div class="circuit-line top-[50%]"></div>
+        <div class="circuit-line top-[60%]"></div>
+        <div class="circuit-line top-[70%]"></div>
+        <div class="circuit-line top-[80%]"></div>
+        <div class="circuit-line top-[90%]"></div>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="container mx-auto py-8">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-center mb-12 p-6 neon-border-blue rounded-lg bg-gradient-to-r from-[#260B68]/70 to-[#1D0225]/90 backdrop-blur-sm">
+            <div class="flex items-center mb-4 md:mb-0">
+                <a href="/" class="flex items-center">
+                    <div class="cyber-logo mr-4">
+                        <div class="cyber-logo-ring"></div>
+                        <div class="cyber-logo-text">b_o</div>
+                    </div>
+                    <h1 class="text-4xl">
+                        <span class="font-bold cyber-text neon-text-pink">bormon_off</span>
+                    </h1>
+                </a>
+                
+            </div>
+            
+            <nav class="flex items-center space-x-2 md:space-x-4 ml-auto mt-2">
+                <a href="#about" class="cyberpunk-btn px-3 py-2 font-medium neon-text-lightblue">
+                    <i class="fas fa-user-secret"></i>IDENTITY
+                </a>
+                <a href="#career" class="cyberpunk-btn px-3 py-2 font-medium neon-text-lightblue">
+                    <i class="fas fa-briefcase"></i>CAREER
+                </a>
+                <a href="#skills" class="cyberpunk-btn px-3 py-2 font-medium neon-text-lightblue">
+                    <i class="fas fa-brain"></i>SKILLS
+                </a>
+                <a href="#contact" class="cyberpunk-btn px-3 py-2 font-medium neon-text-lightblue">
+                    <i class="fas fa-terminal"></i>CONTACT
+                </a>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="mb-20 p-8 neon-border-blue rounded-lg bg-gradient-to-br from-[#1D0225]/90 to-[#260B68]/70 backdrop-blur-sm scanline">
+            <h2 class="text-4xl font-bold mb-8 neon-text-lightblue text-center">
+                <span class="terminal-cursor">_</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="cyber-card p-6 neon-border-lightblue rounded-lg">
+                    <div class="text-4xl neon-text-purple mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold neon-text-blue mb-3">BACKEND ENGINEER</h3>
+                    <p class="text-gray-300">
+                        You know when an application crashes because too many people use it? Yeah, I write, deploy and maintain my apps to prevent that.
+                    </p>
+                </div>
+                
+                <div class="cyber-card p-6 neon-border-purple rounded-lg">
+                    <div class="text-4xl neon-text-blue mb-4">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold neon-text-purple mb-3">TECH LOVER</h3>
+                    <p class="text-gray-300">
+                        My happy time? Weekend = me, my laptop, and deep dives into new tech — building experiments with things that shouldn't work (but do).
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 cyber-card p-6 neon-border-blue rounded-lg">
+                <h3 class="text-2xl font-bold neon-text-purple mb-3">
+                    <i class="fas fa-terminal mr-2"></i>THE DETAILS
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-300 mb-4">
+                            <strong>What I do:</strong> Backend Systems && Cloud Architecture<br>
+                            <strong>Experience:</strong> 4+ years building production systems<br>
+                            <strong>Current focus:</strong> Kubernetes-native applications<br>
+                            <strong>Philosophy:</strong> Automate everything, measure everything
+                        </p>
+                        <p class="text-gray-300">
+                            I'm passionate about building systems that don't break when you look away. 
+                            KISS and YAGNI aren't just buzzwords to me - they're how I code.
+                        </p>
+                    </div>
+                    <div class="p-4 neon-border-lightblue rounded-lg bg-black/50">
+                        <h4 class="text-xl font-bold neon-text-blue mb-3">
+                            <i class="fas fa-cogs mr-2"></i>CURRENTLY WORKING ON
+                        </h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span>
+                                <span class="text-gray-300">Golang/C++/Python applications</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-purple-500 mr-2 animate-pulse"></span>
+                                <span class="text-gray-300">System design && microservices integration</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-pink-500 mr-2 animate-pulse"></span>
+                                <span class="text-gray-300">Building something cool</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Career Section -->
+        <section id="career" class="mb-20 p-8 neon-border-purple rounded-lg bg-gradient-to-br from-[#260B68]/70 to-[#1D0225]/90 backdrop-blur-sm scanline">
+            <h2 class="text-4xl font-bold mb-8 neon-text-lightblue text-center">
+                <i class="fas fa-briefcase mr-2"></i>MY CAREER PATH
+            </h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-date neon-text-blue">March 2022 - April 2023 (1.4 years)</div>
+                    <div class="timeline-content neon-border-blue">
+                        <h3 class="text-xl font-bold neon-text-purple mb-2">Joy Way</h3>
+                        <p class="text-gray-300">
+                            Game Session Processing Team - Designed and implemented real-time backend systems for processing player game sessions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-date neon-text-blue">May 2023 - October 2024 (1.6 years)</div>
+                    <div class="timeline-content neon-border-blue">
+                        <h3 class="text-xl font-bold neon-text-purple mb-2">Positive Technologies</h3>
+                        <p class="text-gray-300">
+                            Data Processing Team - Developed high-load microservices for MaxPatrol SIEM capable of processing 100.000+ events/sec with almost zero latency.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-date neon-text-blue">October 2024 - Present (8 months)</div>
+                    <div class="timeline-content neon-border-blue">
+                        <h3 class="text-xl font-bold neon-text-purple mb-2">Wildberries</h3>
+                        <p class="text-gray-300">
+                            WB's Sellers Stream | Core Team - Handle end-to-end development: designing architecture, implementation, and deploying to production.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20 p-8 neon-border-purple rounded-lg bg-gradient-to-br from-[#260B68]/70 to-[#1D0225]/90 backdrop-blur-sm scanline">
+            <h2 class="text-4xl font-bold mb-8 neon-text-lightblue text-center">
+                <i class="fas fa-microchip mr-2"></i>MY SKILLS
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="cyber-card p-6 neon-border-blue rounded-lg">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl neon-text-purple">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="text-sm px-2 py-1 rounded neon-text-lightblue neon-border-lightblue">
+                            10/10
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold neon-text-purple mb-2">LANGUAGES</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge skill-badge-blue">C++</span>
+                        <span class="skill-badge skill-badge-purple">Go</span>
+                        <span class="skill-badge skill-badge-pink">Python</span>
+                        <span class="skill-badge skill-badge-blue">Bash</span>
+                        <span class="skill-badge skill-badge-purple">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="cyber-card p-6 neon-border-blue rounded-lg">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl neon-text-pink">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="text-sm px-2 py-1 rounded neon-text-purple neon-border-purple">
+                            9/10
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold neon-text-pink mb-2">SYSTEMS</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge skill-badge-blue">Kubernetes</span>
+                        <span class="skill-badge skill-badge-purple">Docker</span>
+                        <span class="skill-badge skill-badge-pink">Linux</span>
+                        <span class="skill-badge skill-badge-blue">CI/CD</span>
+                        <span class="skill-badge skill-badge-purple">Git</span>
+                    </div>
+                </div>
+                
+                <div class="cyber-card p-6 neon-border-purple rounded-lg">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="text-3xl neon-text-purple">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="text-sm px-2 py-1 rounded neon-text-blue neon-border-blue">
+                            9/10
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold neon-text-purple mb-2">DATA & MESSAGING</h3>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge skill-badge-blue">Kafka</span>
+                        <span class="skill-badge skill-badge-purple">ClickHouse</span>
+                        <span class="skill-badge skill-badge-pink">PostgreSQL</span>
+                        <span class="skill-badge skill-badge-blue">Redis</span>
+                        <span class="skill-badge skill-badge-purple">RabbitMQ</span>
+                        <span class="skill-badge skill-badge-pink">Elasticsearch</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cyber-card p-6 neon-border-pink rounded-lg">
+                <h3 class="text-2xl font-bold neon-text-lightblue mb-4">
+                    <i class="fas fa-cogs mr-2"></i>WHAT IF YOU DEEP DIVE
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-300 mb-4">
+                            I don't just write code - I build systems that last. My approach combines deep technical knowledge with practical experience running systems in production.
+                        </p>
+                        <p class="text-gray-300">
+                            Whether it's designing a microservice architecture, debug a bottleneck or troubleshooting a Kubernetes cluster, I focus on solutions that work in the real world.
+                        </p>
+                    </div>
+                    <div class="p-4 neon-border-lightblue rounded-lg bg-black/50">
+                        <h4 class="text-xl font-bold neon-text-blue mb-3">
+                            <i class="fas fa-bolt mr-2"></i>KEY STRENGTHS
+                        </h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span>
+                                <span class="text-gray-300">Curiosity</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-purple-500 mr-2 animate-pulse"></span>
+                                <span class="text-gray-300">As a way</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-pink-500 mr-2 animate-pulse"></span>
+                                <span class="text-gray-300">Of life</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="mb-8 p-8 neon-border-blue rounded-lg bg-gradient-to-br from-[#1D0225]/90 to-[#260B68]/70 backdrop-blur-sm scanline">
+            <h2 class="text-4xl font-bold mb-2 neon-text-purple text-center">
+                <i class="fas fa-satellite-dish mr-2"></i>CONNECT
+            </h2>
+            
+            <div class="connection-node mb-12">
+                <div class="node-line"></div>
+                <div class="node neon-border-purple">
+                    <div class="node-core neon-text-purple">
+                        <i class="fas fa-user-astronaut text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="cyber-card p-6 neon-border-blue rounded-lg text-center">
+                    <div class="text-4xl neon-text-purple mb-4">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="text-xl font-bold neon-text-purple mb-3">CODE</h3>
+                    <p class="text-gray-300 mb-4">
+                        Check out my projects and contributions
+                    </p>
+                    <a href="https://github.com/bormonoff" class="neon-btn w-48 h-12 mx-auto mb-4 flex items-center justify-center text-xl font-bold">
+                        VISIT GITHUB
+                    </a>
+                </div>
+                
+                <div class="cyber-card p-6 neon-border-purple rounded-lg text-center">
+                    <div class="text-4xl neon-text-blue mb-4">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="text-xl font-bold neon-text-pink mb-3">PROFILE</h3>
+                    <p class="text-gray-300 mb-4">
+                        My professional background and experience
+                    </p>
+                    <a href="https://www.linkedin.com/in/boris-baranov-76518a239/" class="neon-btn-blue w-48 h-12 mx-auto mb-4 flex items-center justify-center text-xl font-bold">
+                        VISIT LINKED IN
+                    </a>
+                </div>
+                
+                <div class="cyber-card p-6 neon-border-purple rounded-lg text-center">
+                    <div class="text-4xl neon-text-purple mb-4">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="text-xl font-bold neon-text-blue mb-3">CHAT</h3>
+                    <p class="text-gray-300 mb-4">
+                        Message me directly for opportunities
+                    </p>
+                    <a href="https://www.linkedin.com/in/boris-baranov-76518a239/" class="neon-btn w-48 h-12 mx-auto mb-4 flex items-center justify-center text-xl font-bold">
+                        PING TELEGRAM
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cyber-card p-6 neon-border-lightblue rounded-lg text-center max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold neon-text-blue mb-4">
+                    <i class="fas fa-paper-plane mr-2"></i>GET IN TOUCH
+                </h3>
+                <p class="text-gray-300 mb-6">
+                    Interested in working together or have questions about my work? 
+                    Feel free to reach out through any of the channels above.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://github.com/bormonoff" class="cyberpunk-btn-bottom w-12 h-12 rounded-full flex items-center justify-center neon-text-purple border border-purple-500 hover:bg-purple-900/30">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/boris-baranov-76518a239/" class="cyberpunk-btn-bottom w-12 h-12 rounded-full flex items-center justify-center neon-text-blue border border-blue-500 hover:bg-blue-900/30">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://t.me/bormon_off" class="cyberpunk-btn-bottom w-12 h-12 rounded-full flex items-center justify-center neon-text-pink border border-pink-500 hover:bg-pink-900/30">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="text-gray-300 text-1xl text-center">
+            <p>© 2077 bormon_off. All rights reserved. 
+                <br>
+                WARNING: this site is deployed into self-hosted k8s
+            </p>
+        </div>  
+    </div>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
