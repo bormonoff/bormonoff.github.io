@@ -717,3 +717,10 @@ section {
         padding: 2rem;
     }
 }
+
+.neon-text-lightblue-dim {
+    color: #00c5f1;
+    text-shadow: 0 0 3px #68A2EB,
+                 0 0 12px #68A2EB;
+    opacity: 0.8;
+} 

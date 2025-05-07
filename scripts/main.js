@@ -70,9 +70,7 @@ setInterval(draw, 30);
 // Terminal text effect
 const terminalTexts = [
     "WHO AM I?",
-    "BACKEND ENGINEER",
-    "TECH LOVER",
-    "CHILL GUY",
+
 ];
 
 let currentTextIndex = 0;
@@ -108,7 +106,7 @@ const typeWriter = () => {
             }
         }
         
-        const typingSpeed = isDeleting ? 50 : 100;
+        const typingSpeed = isDeleting ? 60 : 140;
         setTimeout(type, typingSpeed);
     };
     
